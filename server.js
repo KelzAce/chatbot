@@ -73,7 +73,7 @@ io.on("connection", (socket) => {
 
   // Ask for the user's name if not provided already
   if (!socket.request.session[deviceId].userName) {
-    socket.emit("bot-message", "Hello! What's your name?");
+    socket.emit("bot-message", "Hello to choppwell! What's your name?");
   } else {
     socket.emit(
       "bot-message",
