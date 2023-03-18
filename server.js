@@ -103,7 +103,7 @@ io.on("connection", (socket) => {
       socket.request.session[deviceId].userName = userName;
       socket.emit(
         "bot-message",
-        ` Hello ${userName}, Welcome to the ChopWell ChatBot, !\n1. Place an order\n99. Checkout order\n98. Order history\n97. Current order\n0. Cancel order`
+        ` Hello ${userName},\n. Welcome to the ChopWell ChatBot, !\n1. Place an order\n99. Checkout order\n98. Order history\n97. Current order\n0. Cancel order`
       );
     } else {
       switch (message) {
